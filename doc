@@ -1,0 +1,50 @@
+1.Forecasting
+
+Forecasting is used for predicting the future direction of trend by using some of the previous data,
+here we can use the sales records of bananas in previous weeks to estimate the sales of bananas in
+the next week.
+2.Anomaly Detection
+Anomaly detection is used to find thing unusual happened and quite different with expected
+patterns. Here we determine whether this bank card is stolen by comparing the past purchase
+records with our expected trend. If a purchase record seriously deviates from our expected trend, it
+means that the credit card is likely to be stolen.
+3.Recommendation systems
+Recommendation systems is the things like filter, it can use what user often look at and the
+suggestions by other users to find the most relevant thing to the user. Therefore, we can find out
+what content best meets the user's preferences and viewing habits through this recommendation
+system.
+4.Risk prediction
+Risk prediction is the use of various factors to analyse and predict the probability of a person's risk
+events. Here we using genomic and lifestyle factors which both can increase the probability of
+contracting breast cancer to determine the chance of an individual contracting breast cancer in the
+next year.
+Question2
+1.
+So what we have now is:
+R=0 R=1 R=2 Total
+H=0 2 8 9 19
+H=1 5 2 12 19
+Total 7 10 21 38(total game)
+Then we can get:
+P(R=0) P(R=1) P(R=2) P(Total)
+P(H=0) 2/38=1/19 8/38=4/19 9/38 19/38=1/2
+P(H=1) 5/38 2/38=1/19 12/38=6/19 19/38=1/2
+P(Total) 7/38 10/38=5/19 21/38 38/38=1
+2. P(R=2)=9/38+12/38=21/38
+3. P(R=2|H=1)= P(R=2,H=1)/P(H=1)=(12/38)/(19/38)=12/19
+4. P(R=2|H=0)= P(R=2,H=0)/P(H=0)=(9/38)/(19/38)=9/19
+5.
+Yes I do believe that Barcelona is more likely to win when at home versus when they play away,
+because probability that Barcelona will win a game when playing at home is 12/19 which is greater
+than probability that Barcelona will win a game when playing away 9/19.
+6.
+Here we want get probability that they will not lose two out of three of these games, so we just need
+to know probability that they will not lose all three games and probability that they will only lose one
+game and probability of all lost.
+probability that they will lose the away game:
+P(R=0|H=0)=P(R=0,H=0)/P(H=0)=(2/38)/(19/38)=2/19
+probability that they will lose the at home game:
+P(R=0|H=1)=P(R=0,H=1)/P(H=1)=(5/38)/(19/38)=5/19
+probability that they will lose no game: (1-2/19)*(1-5/19)*(1-2/19)=4046/6859
+probability that they will lose first game: (2/19)*(1-5/19)*(1-2/19)=476/6859
+probability that they will lose second game: (1-2/19)*(5/19)*(1-2/19)=1445/6859
